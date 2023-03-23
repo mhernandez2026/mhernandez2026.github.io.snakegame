@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Slithering Snakes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="wrap">
+    <h1>Slithering Snakes</h1>
+    <p class="score">Score:<span id="score_value">0</span></p>
+  </header>
+  <canvas class="wrap" id="snake" width="430" height="430" tabindex="1"></canvas>
+
+  <div id="gameover">
+    <h2>Game Over</h2>
+    <p>Press <span style="background-color: #FFFFFF; color: #000000">space</span> to begin again...</p>
+    <a id="newgame_gameover">New Game</a>
+    <a id="setting_gameover">Settings</a>
+    <a id="aboutdev_gameover">About the Developers</a>
+  </div>
+
+  <div id="setting">
+    <h2>Settings</h2>
+
+    <a id="newgame_setting">New Game</a>
+    <a id="aboutdev_setting">About the Developers</a>
+
+    <p>Speed:
+      <input id="speed1" type="radio" name="speed" value="120" checked>
+      <label for="speed1">Slow</label>
+      <input id="speed2" type="radio" name="speed" value="75">
+      <label for="speed2">Normal</label>
+      <input id="speed3" type="radio" name="speed" value="35">
+      <label for="speed3">Fast</label>
+    </p>
+
+    <p>Wall:
+      <input id="wallon" type="radio" name="wall" value="1" checked>
+      <label for="wallon">On</label>
+      <input id="walloff" type="radio" name="wall" value="0">
+      <label for="walloff">Off</label>
+    </p>
+
+  </div>
+
+  <div id="devs">
+    <h2>About the Developers</h2>
+    <div style="display: flex;">
+      <img src="csgroupppp.jpg" alt="pic" width="500" height="400">
+      <p>Hello! We are the developers of this version of snake game for our Computer Science 3 Project. Our names are
+      Fairy Lei S. Cara, Maria Katrina "Faith" F. Hernandez, and Milagros Gabriela d.C. Vargas from 9-Arayat.</p>
+    </div>
+    <div style="display: inline-flex;">
+      <a id="newgame_dev">New Game</a>
+      <a id="setting_dev">Settings</a>
+      <a id="ref_button">References</a>
+    </div>
+      
+  </div>
+
+  <div id="refs">
+    <h2>References</h2>
+    <p>Below are the references for this project. </p> <br>
+    <p>This is the source code we used as a guide.</p>
+    <p><a href="https://codepen.io/Derek323/pen/XXzGOx">Source Code</a></p>
+
+    <a id="newgame_ref">New Game</a>
+  </div>
+
+  <div id="menu">
+
+    <a id="newgame_menu">Play</a>
+    <a id="setting_menu">Settings</a>
+    <a id="aboutdevs_menu">About the Developers</a>
+
+    <p>Your classic snake game is here!</p>
+    <p>Use the arrow keys to move, and don't run into your body & wall.</p>
+    <p>Goodluck!</p>
+
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
